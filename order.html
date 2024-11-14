@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background-color: #07f0dc; color: #fff; padding: 10px; text-align: center; }
+        nav { background-color: #07f0dc;margin: 10px; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; }
+        main { padding: 20px; }
+        input, textarea, select, button { display: block; margin: 10px 0; padding: 10px; width: 100%; }
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+        <a href="home.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="order.html">Order</a>
+        <a href="seller.html">Seller</a>
+        <a href="contact.html">Contact</a>
+        <a href="account.html">account</a>
+    </nav> 
+    </header>
+    
+    <main id="order">
+        <h2>Place a Custom Order</h2>
+        <form action="admin.html" method="post">
+            <label for="buyerName">Your Name:</label>
+            <input type="text" id="buyerName" name="buyerName" required>
+            
+            <label for="buyerEmail">Phone Number:</label>
+            <input type="number" id="buyerPhoneNumber" name="buyerPhoneNumber" required>
+            
+            <label for="productRequest">Product Specifications:</label>
+            <textarea id="productRequest" name="productRequest" required></textarea>
+            
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+</body>
+</html>

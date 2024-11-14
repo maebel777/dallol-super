@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header { background-color: #0bb0f1; color: #fff; padding: 10px; text-align: center; }
+        main { max-width: 500px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; }
+        h2 { text-align: center; }
+        form { display: flex; flex-direction: column; }
+        label { margin-top: 10px; }
+        input[type="text"], input[type="password"], input[type="tel"] {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .button-container { display: flex; justify-content: space-between; margin-top: 20px; }
+        button, a {
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #0bb0f1;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 48%;
+        }
+        button:hover, a:hover {
+            background-color: #0bb0f1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h3>Account Settings</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="order.html">Order</a>
+        <a href="seller.html">Seller</a>
+        <a href="contact.html">Contact</a>
+        <a href="account.html">account</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Manage Your Account</h2>
+
+    <form action="update_account.php" method="post">
+        <!-- Username Field -->
+        <label for="username">Change Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter new username">
+
+        <!-- Phone Number Field -->
+        <label for="phone">Change Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter new phone number">
+
+        <!-- Password Field -->
+        <label for="password">Change Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter new password">
+         <br>
+        <!-- Button to Update Information -->
+        <button type="submit">Update Information</button>
+    </form>
+
+    <!-- Buttons for Logout and Admin Page -->
+    <div class="button-container">
+        
+        <a href="login.html">Logout</a>
+
+        <a href="admin.html">Go to Admin Page</a>
+    </div>
+</main>
+
+</body>
+</html>

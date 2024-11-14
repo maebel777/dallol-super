@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DALLOL</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header, footer { background-color: #07f7bb; color: #fff; padding: 10px; text-align: center; }
+        nav { background-color: #07f7bb;margin: 10px; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; }
+        nav a:hover {   color: #f10b0b; }
+        main { padding: 20px; }
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+
+        /* Image styling for the scroll view */
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+
+        /* Container for each image and caption */
+        .image-container {
+            display: inline-block;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+        /* Image styling */
+        .image-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Caption styling */
+        .image-container .caption {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+        input, textarea, select, button { display: block; margin: 10px 0; padding: 10px; width: 100%; }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h3>Welcome to Dallol Store </h3>
+         <nav>
+        <a href="home.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="order.html">Order</a>
+        <a href="seller.html">Seller</a>
+        <a href="contact.html">Contact</a>
+        <a href="account.html">account</a>
+    </nav>
+    </header>
+   
+    <main id="home">
+        <h2>Welcome to Our E-Commerce Platform</h2>
+        <p>This platform connects buyers with sellers of various products. </p>
+        <br>
+        <div class="scroll-container">
+            <div class="image-container">
+                <div class="caption">CHS</div>
+                <img src="images/chs.jpg" alt="Product 1">
+                
+            </div>
+            <div class="image-container">
+                <div class="caption">RHS</div>
+                <img src="images/rhs.jpg" alt="Product 2">
+                
+            </div>
+            <div class="image-container">
+                <div class="caption">LTZ</div>
+                <img src="images/ltz.jpg" alt="Product 3">
+                
+            </div>
+
+            <div class="image-container">
+                <div class="caption">SHEET METAL</div>
+                <img src="images/sheet.jpg"Product 4">
+                
+            </div>
+            <div class="image-container">
+                <div class="caption">SHS</div>
+                <img src="images/shs.jpg" alt="Product 5">
+                
+            </div>
+             
+        </div>
+         
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Dallol Store</p>
+    </footer>
+</body>
+</html>
